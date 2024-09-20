@@ -1,0 +1,167 @@
+header {
+    background-color: #4a3f66;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    font-size: 24px;
+
+}
+header:hover
+{
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo a {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 300px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+    margin-right: 150px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #160838;
+}
+
+/* Actions: Login Button and Dark Mode Toggle */
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.actions i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.login-btn {
+    background-color: #b98aff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #9c6be8;
+}
+
+.signup-btn {
+    background-color: #b98aff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-right: 30px;
+}
+
+.signup-btn:hover {
+    background-color: #9c6be8;
+}
+
+/* Drawer Styles */
+.drawer {
+    position: absolute;
+    top: 67px;
+    left: 0;
+    width: 150px;
+    background-color: #2d1a42;
+    padding: 20px;
+    display: none;
+    z-index: 10;
+    
+}
+
+.drawer.open {
+    display: block;
+}
+
+.drawer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.drawer ul li {
+    margin-bottom: 20px;
+}
+
+.drawer ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.drawer ul li a:hover {
+    color: #0073b1;
+}
+
+/* Dark Mode */
+body.dark-mode header {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+body.dark-mode .nav-links li a {
+    color: black;
+}
+
+body.dark-mode .nav-links li a:hover {
+    color: #6d3adb;
+}
+
+body.dark-mode .actions i {
+    color: black;
+}
+
+body.dark-mode .login-btn{
+    background-color: #6d3adb;
+}
+
+body.dark-mode .signup-btn{
+    background-color: #6d3adb;
+}
+
+body.dark-mode .logo a
+{
+    color: black;
+}

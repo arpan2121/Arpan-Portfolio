@@ -1,0 +1,257 @@
+/* Header Styles */
+header {
+    background-color: #4a3f66;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    font-size: 24px;
+}
+
+ 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 300px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+    margin-right: 150px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+    color: #160838;
+    text-decoration: underline; /* Adds underline when hovered */
+}
+
+/* Actions: Login Button and Dark Mode Toggle */
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.actions i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.1s;
+}
+
+.login-btn {
+    background-color: #6d3adb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.login-btn:hover {
+    background-color: #333;
+}
+
+.signup-btn {
+    background-color: #6d3adb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    margin-right: 10px;
+}
+
+.signup-btn:hover {
+    background-color: #333;
+}
+
+/* Drawer Menu Styles */
+.drawer {
+    position: absolute;
+    top: 67px;
+    left: 0;
+    width: 150px;
+    background-color: #2d1a42;
+    padding: 20px;
+    display: none;
+    z-index: 10;
+    transition: all 0.2s ease; /* Smooth transition */
+}
+
+.drawer.open {
+    display: block;
+}
+
+.drawer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.drawer ul li {
+    margin-bottom: 20px;
+}
+
+.drawer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+.drawer ul li a:hover {
+    color: #8396a1;
+}
+
+/* Menu Button Hover Effect */
+.menu-btn {
+    cursor: pointer;
+    color: white;
+}
+
+.menu-btn:hover {
+    color: #ffffff;
+}
+
+/* Search Container (Initially Hidden) */
+.search-container {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 70px; /* Just below the navbar */
+    left: 0;
+    right: 0;
+   
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    margin-left: 1100px;
+}
+
+/* Search Form Styles */
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-btn {
+    background-color: #6d3adb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.search-btn i {
+    font-size: 16px;
+    color: white;
+}
+
+.search-btn:hover {
+    background-color: #333;
+}
+
+/* Dark Mode for Search */
+body.dark-mode .search-container {
+    background-color: #333;
+}
+
+body.dark-mode .search-input {
+    background-color: #555;
+    color: white;
+}
+
+body.dark-mode .search-btn {
+    background-color: #9c6be8;
+}
+
+body.dark-mode .search-btn:hover {
+    background-color: #444;
+}
+
+
+/* Dark Mode */
+body.dark-mode header {
+    background-color: #e1dddd;
+    color: black;
+}
+
+body.dark-mode .menu-btn {
+    color: #000000;
+}
+
+body.dark-mode .nav-links li a {
+    color: black;
+}
+
+body.dark-mode .nav-links li a:hover {
+    color: #6d3adb;
+}
+
+body.dark-mode .actions i {
+    color: black;
+}
+
+body.dark-mode .login-btn {
+    background-color: #9c6be8;
+}
+
+body.dark-mode .signup-btn {
+    background-color: #9c6be8;
+}
+
+body.dark-mode .login-btn:hover {
+    background-color: #333;
+}
+
+
+body.dark-mode .signup-btn:hover {
+    background-color: #333;
+}
+
+
+body.dark-mode .logo a {
+    color: black;
+}

@@ -1,0 +1,169 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Container Styles */
+.container {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 1300px;
+    width: 100%;
+    margin-top: 200px; /* Adds space below the navbar */
+   
+    margin-left: 110px;
+    
+}
+
+/* Header Styles */
+.contact-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Middle Container Styles */
+.middle-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.middle-container p {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Picture */
+.profile-pic {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.round-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Social Media Icons */
+.social-icons {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+}
+
+.social-icons li a {
+    font-size: 30px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-icons li a:hover {
+    color: #007bff;
+}
+/* Footer */
+/* footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+} */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-header h1 {
+        font-size: 2rem;
+    }
+
+    .middle-container p {
+        font-size: 1.2rem;
+    }
+
+    .contact-header p {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .nav-links ul li {
+        margin: 10px 0;
+    }
+}
+* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+/* Dark Mode for Container */
+body.dark-mode .container {
+    background-color: #1e1e1e;
+    color: #ddd;
+}
+
+/* Dark Mode for Header */
+body.dark-mode .contact-header h1 {
+    color: #f5f5f5;
+}
+
+/* Dark Mode for Middle Container */
+body.dark-mode .middle-container p {
+    color: #ddd;
+}
+
+/* Dark Mode for Contact Section */
+body.dark-mode .contact-section {
+    background-color: #2c2c2c;
+    color: #ddd;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Dark Mode for Social Media Icons */
+body.dark-mode .social-icons li a {
+    color: #ddd;
+}
+
+/* Footer Dark Mode (if used) */
+body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+body.dark-mode 
+{
+    background-color:#2c2c2c ;
+}
