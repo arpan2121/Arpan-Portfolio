@@ -1,2 +1,2 @@
 # Arpan-Portfolio
-My Personal as well as Proffetional Imformation 
+My Personal as well as Professional Imformation 
